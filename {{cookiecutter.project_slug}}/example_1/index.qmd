@@ -1,9 +1,0 @@
----
-title: Example 1
-listing:
-    contents: /**/*.qmd
-    type: grid
-    categories: false
----
-
-This example has listings separate from the top level project. Great for sub-investigations or analyses.

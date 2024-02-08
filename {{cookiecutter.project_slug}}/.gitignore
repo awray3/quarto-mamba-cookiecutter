@@ -1,7 +1,9 @@
 .cache
 
 .vscode
-.quarto/
 .quarto_output/
-
 /.quarto/
+
+**/**.egg-info
+**/__pycache__
+**/.ipynb_checkpoints

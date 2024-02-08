@@ -9,6 +9,7 @@ dependencies:
   - matplotlib
   - bokeh
   - ipython
+  - ipykernel
   - holoviews
   - hvplot
   - rich

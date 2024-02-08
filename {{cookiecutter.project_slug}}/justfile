@@ -12,6 +12,9 @@ recreate-env:
     {{mamba}} remove -n {{project_slug}}
     just create-env
 
+install-kernel:
+    {{mamba}} run -n {{project_slug}} python -m ipykernel install --user --name {{project_slug}}
+
 open:
     quarto preview .
 {% endraw %}

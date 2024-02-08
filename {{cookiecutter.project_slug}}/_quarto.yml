@@ -5,6 +5,7 @@ project:
 
 toc: true
 number-sections: true
+jupyter: {{cookiecutter.project_slug}}
 # bibliography: references.bib  
   
 website: 
@@ -13,8 +14,8 @@ website:
     background: primary
     search: true
     left:
-      - text: Example 1
-        file: example_1/
+      - text: Docs
+        file: docs/index.qmd
 
 
 format:

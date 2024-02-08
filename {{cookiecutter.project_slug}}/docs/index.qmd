@@ -1,0 +1,9 @@
+---
+title: Documentation
+listing:
+    contents: /**/*.qmd
+    type: grid
+    categories: false
+---
+
+Welcome to the documentation!

@@ -3,8 +3,8 @@ title: "{{cookiecutter.project_name}}"
 listing:
     contents: 
         - .
-        # This is for having a separate listing than example 1
-        - "!example_1/*/"
+        # This is so docs and the project have separate listings
+        - "!docs/*/"
     type: grid
     fields: [title]
 ---
