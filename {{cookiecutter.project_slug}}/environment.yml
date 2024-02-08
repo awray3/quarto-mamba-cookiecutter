@@ -1,0 +1,22 @@
+name: {{cookiecutter.project_slug}}
+channels:
+  - conda-forge
+  - pyviz
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - bokeh
+  - ipython
+  - holoviews
+  - hvplot
+  - rich
+  - click
+  - sqlalchemy
+  - pip
+  - pip:
+    - duckdb
+    - jupysql
+    - duckdb-engine
+    - python-box

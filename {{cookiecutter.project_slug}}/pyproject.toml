@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{cookiecutter.project_slug}}"
+version = "0.1.0"
+description = "A brief description of your project."
+authors = [
+    {name = "{{cookiecutter.name}}", email = "{{cookiecutter.email}}"},
+]
+keywords = ["sample", "example", "python"]
+
+[tool.black]
+line-length = 88
+target-version = ["py36", "py37", "py38", "py39"]
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+)/
+'''
+

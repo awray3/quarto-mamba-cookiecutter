@@ -1,0 +1,6 @@
+stages:
+  example:
+    cmd: echo foo > data/example.txt
+    deps: []
+    outs:
+      - data/example.txt

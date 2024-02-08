@@ -1,0 +1,17 @@
+project_slug := "{{cookiecutter.project_slug}}"
+
+mamba := "micromamba"
+
+# justfile and cookiecutter notation clashes
+{% raw %}
+create-env:
+    {{mamba}} create -f environment.yml -n {{project_slug}} -y
+    {{mamba}} run -n {{project_slug}} pip install -e .
+
+recreate-env:
+    {{mamba}} remove -n {{project_slug}}
+    just create-env
+
+open:
+    quarto preview .
+{% endraw %}

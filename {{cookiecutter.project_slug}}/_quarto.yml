@@ -1,0 +1,37 @@
+project:
+  type: website
+  title: {{cookiecutter.project_name}}
+  output-dir: .quarto_output
+
+toc: true
+number-sections: true
+# bibliography: references.bib  
+  
+website: 
+  title: {{cookiecutter.project_name}}
+  navbar: 
+    background: primary
+    search: true
+    left:
+      - text: Example 1
+        file: example_1/
+
+
+format:
+  html:
+    theme: 
+      - slate
+      - .static/css/styles.scss
+    highlight-style: atom-one-dark
+    html-math-method: katex
+  pdf:
+    documentclass: report
+    margin-left: 30mm
+    margin-right: 30mm
+
+
+page-layout: article
+
+execute: 
+  freeze: true
+  execute-dir: file

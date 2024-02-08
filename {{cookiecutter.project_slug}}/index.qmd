@@ -1,0 +1,12 @@
+---
+title: "{{cookiecutter.project_name}}"
+listing:
+    contents: 
+        - .
+        # This is for having a separate listing than example 1
+        - "!example_1/*/"
+    type: grid
+    fields: [title]
+---
+
+This is the homepage for the project. Select one of the buttons at the top of the page to see more.
