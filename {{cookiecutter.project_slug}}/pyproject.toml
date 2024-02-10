@@ -13,18 +13,21 @@ keywords = ["sample", "example", "python"]
 
 [tool.black]
 line-length = 88
-target-version = ["py36", "py37", "py38", "py39"]
-exclude = '''
-/(
+target-version = ["py311", "py312"]
+extend-exclude = '''
+(
     \.git
-    | \.hg
-    | \.mypy_cache
-    | \.tox
-    | \.venv
-    | _build
-    | buck-out
-    | build
-    | dist
-)/
+    | \data
+    | \.quarto_output
+    | \.static
+    | \.dvc
+)
 '''
 
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.ruff]
+# quarto support maybe coming soon (https://github.com/astral-sh/ruff/issues/3792)
+extend-include = ["*.ipynb"]
